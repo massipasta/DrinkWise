@@ -268,7 +268,7 @@ const DishForm = ({ dish, onSave, onCancel, saving = false }) => {
         <button
           type="submit"
           disabled={saving}
-          className="px-6 py-3 bg-gradient-to-r from-pink-500 via-purple-600 to-pink-500 text-white rounded-xl hover:from-pink-600 hover:via-purple-700 hover:to-pink-600 focus:outline-none focus:ring-2 focus:ring-pink-400 focus:ring-offset-2 shadow-lg hover:shadow-xl transition-all duration-200 font-bold disabled:opacity-50 disabled:cursor-not-allowed flex items-center gap-2 transform hover:scale-105 disabled:transform-none"
+          className="px-6 py-3 bg-gradient-to-r from-green-400 via-purple-600 to-green-400 text-white rounded-xl hover:from-green-500 hover:via-purple-700 hover:to-green-500 focus:outline-none focus:ring-2 focus:ring-green-400 focus:ring-offset-2 shadow-lg hover:shadow-xl transition-all duration-200 font-bold disabled:opacity-50 disabled:cursor-not-allowed flex items-center gap-2 transform hover:scale-105 disabled:transform-none"
         >
           {saving ? (
             <>

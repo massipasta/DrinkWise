@@ -141,7 +141,7 @@ const CategoryManager = ({ onClose, onCategorySelect }) => {
 
   const presetColors = [
     '#9333EA', // Purple
-    '#EC4899', // Pink
+    '#22C55E', // Green
     '#F59E0B', // Amber
     '#10B981', // Green
     '#3B82F6', // Blue
@@ -217,7 +217,7 @@ const CategoryManager = ({ onClose, onCategorySelect }) => {
             <div className="flex gap-2">
               <button
                 type="submit"
-                className="flex-1 px-4 py-2 bg-gradient-to-r from-pink-500 to-purple-600 text-white rounded-lg hover:from-pink-600 hover:to-purple-700 font-semibold transition-all"
+                className="flex-1 px-4 py-2 bg-gradient-to-r from-green-400 to-purple-600 text-white rounded-lg hover:from-green-500 hover:to-purple-700 font-semibold transition-all"
               >
                 {editingCategory ? 'Update Category' : 'Create Category'}
               </button>
@@ -246,7 +246,7 @@ const CategoryManager = ({ onClose, onCategorySelect }) => {
             </div>
           ) : (
             <div className="space-y-2">
-              <div className="mb-4 p-4 bg-gradient-to-r from-purple-50 to-pink-50 border-2 border-purple-200 rounded-lg">
+              <div className="mb-4 p-4 bg-gradient-to-r from-green-50 to-purple-50 border-2 border-green-200 rounded-lg">
                 <div className="text-sm text-purple-800 flex items-center gap-3 font-semibold">
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 16V4m0 0L3 8m4-4l4 4m6 0v12m0 0l4-4m-4 4l-4-4" />

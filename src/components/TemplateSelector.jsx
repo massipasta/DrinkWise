@@ -147,7 +147,7 @@ const TemplateSelector = ({ onSelectTemplate, onClose }) => {
                       </div>
                       <div className="text-right ml-4">
                         <div className="text-sm text-gray-600">Cost per {template.yield_unit}</div>
-                        <div className="text-lg font-bold bg-gradient-to-r from-pink-600 to-purple-600 bg-clip-text text-transparent">${costPerUnit.toFixed(4)}</div>
+                        <div className="text-lg font-bold bg-gradient-to-r from-green-500 to-purple-600 bg-clip-text text-transparent">${costPerUnit.toFixed(4)}</div>
                       </div>
                     </div>
                   </button>

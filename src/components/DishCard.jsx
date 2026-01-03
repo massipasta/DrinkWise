@@ -40,7 +40,7 @@ const DishCard = ({ dish, onEdit, onDelete }) => {
       <div className="p-6">
         <div className="flex justify-between items-start mb-4">
           <div className="flex-1">
-            <h3 className="text-xl font-bold text-gray-900 group-hover:text-purple-600 transition-colors">
+            <h3 className="text-xl font-bold text-gray-900 group-hover:text-green-500 transition-colors">
               {dish.name}
             </h3>
             {dish.category && (
@@ -95,7 +95,7 @@ const DishCard = ({ dish, onEdit, onDelete }) => {
             </div>
             <button
               onClick={() => onEdit(dish)}
-              className="p-2 text-purple-600 hover:bg-purple-50 rounded-xl transition-all hover:scale-110"
+              className="p-2 text-green-500 hover:bg-green-50 rounded-xl transition-all hover:scale-110"
               title="Edit cocktail"
             >
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -120,7 +120,7 @@ const DishCard = ({ dish, onEdit, onDelete }) => {
               ? 'bg-gradient-to-br from-red-50 to-red-100/50 border-2 border-red-300 shadow-md' 
               : isBelowTarget 
                 ? 'bg-gradient-to-br from-green-50 to-green-100/50 border-2 border-green-300 shadow-md' 
-                : 'bg-gradient-to-br from-purple-50/50 to-pink-50/50 border-2 border-purple-200'
+                : 'bg-gradient-to-br from-green-50/50 to-purple-50/50 border-2 border-green-200'
           }`}>
           <div className="space-y-3">
             <div className="flex justify-between items-center">
@@ -159,7 +159,7 @@ const DishCard = ({ dish, onEdit, onDelete }) => {
               <div className="pt-2 border-t border-gray-300">
                 <div className="flex justify-between items-center">
                   <span className="text-sm font-medium text-gray-700">Suggested Price</span>
-                  <span className="text-xl font-bold bg-gradient-to-r from-pink-600 to-purple-600 bg-clip-text text-transparent">${suggestedPrice.toFixed(2)}</span>
+                  <span className="text-xl font-bold bg-gradient-to-r from-green-500 to-purple-600 bg-clip-text text-transparent">${suggestedPrice.toFixed(2)}</span>
                 </div>
               </div>
             )}

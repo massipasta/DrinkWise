@@ -54,7 +54,7 @@ const IngredientList = ({ ingredients, onRemove, onEdit }) => {
                   </span>
                   <span>used</span>
                   <span>=</span>
-                  <span className="font-bold bg-gradient-to-r from-pink-600 to-purple-600 bg-clip-text text-transparent text-base">${cost.toFixed(2)}</span>
+                  <span className="font-bold bg-gradient-to-r from-green-500 to-purple-600 bg-clip-text text-transparent text-base">${cost.toFixed(2)}</span>
                 </div>
               </div>
             </div>

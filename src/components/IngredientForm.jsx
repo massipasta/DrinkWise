@@ -179,7 +179,7 @@ const IngredientForm = ({ onAdd, initialValue }) => {
         : 0)
 
   return (
-    <div className="bg-gradient-to-br from-purple-50/50 to-pink-50/50 p-5 rounded-2xl border-2 border-purple-200 backdrop-blur-sm">
+    <div className="bg-gradient-to-br from-green-50/50 to-purple-50/50 p-5 rounded-2xl border-2 border-green-200 backdrop-blur-sm">
       {/* Costing Mode Toggle */}
       <div className="mb-4">
         <label className="block text-sm font-semibold text-gray-700 mb-2">How do you buy this spirit/mixer?</label>
@@ -217,7 +217,7 @@ const IngredientForm = ({ onAdd, initialValue }) => {
             <button
               type="button"
               onClick={() => setShowTemplateSelector(true)}
-              className="text-sm bg-gradient-to-r from-pink-600 to-purple-600 bg-clip-text text-transparent hover:from-pink-700 hover:to-purple-700 font-bold transition-all"
+              className="text-sm bg-gradient-to-r from-green-500 to-purple-600 bg-clip-text text-transparent hover:from-green-600 hover:to-purple-700 font-bold transition-all"
             >
               Use Template
             </button>
@@ -235,7 +235,7 @@ const IngredientForm = ({ onAdd, initialValue }) => {
             type="button"
             onClick={handleAIEstimate}
             disabled={!name.trim() || isEstimating}
-            className="px-4 py-3 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-xl hover:from-purple-600 hover:to-pink-600 focus:outline-none focus:ring-2 focus:ring-purple-400 font-semibold shadow-md hover:shadow-lg transition-all disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none transform hover:scale-105 whitespace-nowrap"
+            className="px-4 py-3 bg-gradient-to-r from-green-400 to-purple-600 text-white rounded-xl hover:from-green-500 hover:to-purple-700 focus:outline-none focus:ring-2 focus:ring-green-400 font-semibold shadow-md hover:shadow-lg transition-all disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none transform hover:scale-105 whitespace-nowrap"
             title="Get a quick cost estimate to use as a starting point"
           >
             {isEstimating ? (
@@ -321,9 +321,9 @@ const IngredientForm = ({ onAdd, initialValue }) => {
                 </div>
               </div>
               <div className="md:col-span-1">
-            <div className="bg-gradient-to-br from-purple-50 to-pink-50 border-2 border-purple-200 rounded-xl p-3 h-full flex flex-col justify-center">
+            <div className="bg-gradient-to-br from-green-50 to-purple-50 border-2 border-green-200 rounded-xl p-3 h-full flex flex-col justify-center">
               <div className="text-xs text-gray-600 mb-1 font-medium">Calculated Cost</div>
-              <div className="text-xl font-bold bg-gradient-to-r from-pink-600 to-purple-600 bg-clip-text text-transparent">${calculatedCost.toFixed(2)}</div>
+              <div className="text-xl font-bold bg-gradient-to-r from-green-500 to-purple-600 bg-clip-text text-transparent">${calculatedCost.toFixed(2)}</div>
             </div>
               </div>
             </div>
@@ -369,9 +369,9 @@ const IngredientForm = ({ onAdd, initialValue }) => {
               </div>
             </div>
             <div className="relative">
-              <div className="bg-gradient-to-br from-purple-50 to-pink-50 border-2 border-purple-200 rounded-xl p-3 h-full flex flex-col justify-center min-h-[52px]">
+              <div className="bg-gradient-to-br from-green-50 to-purple-50 border-2 border-green-200 rounded-xl p-3 h-full flex flex-col justify-center min-h-[52px]">
                 <div className="text-xs text-gray-600 mb-1 font-medium">Calculated Cost</div>
-                <div className="text-xl font-bold bg-gradient-to-r from-pink-600 to-purple-600 bg-clip-text text-transparent">${calculatedCost.toFixed(2)}</div>
+                <div className="text-xl font-bold bg-gradient-to-r from-green-500 to-purple-600 bg-clip-text text-transparent">${calculatedCost.toFixed(2)}</div>
               </div>
             </div>
           </div>
@@ -382,7 +382,7 @@ const IngredientForm = ({ onAdd, initialValue }) => {
         <button
           type="button"
           onClick={handleAdd}
-          className="px-6 py-3 bg-gradient-to-r from-pink-500 via-purple-600 to-pink-500 text-white rounded-xl hover:from-pink-600 hover:via-purple-700 hover:to-pink-600 focus:outline-none focus:ring-2 focus:ring-pink-400 focus:ring-offset-2 shadow-lg hover:shadow-xl transition-all duration-200 font-bold flex items-center justify-center gap-2 transform hover:scale-105"
+          className="px-6 py-3 bg-gradient-to-r from-green-400 via-purple-600 to-green-400 text-white rounded-xl hover:from-green-500 hover:via-purple-700 hover:to-green-500 focus:outline-none focus:ring-2 focus:ring-green-400 focus:ring-offset-2 shadow-lg hover:shadow-xl transition-all duration-200 font-bold flex items-center justify-center gap-2 transform hover:scale-105"
         >
           <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />

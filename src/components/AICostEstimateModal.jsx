@@ -4,7 +4,7 @@ const AICostEstimateModal = ({ isOpen, onClose, onAccept, ingredientName, estima
   return (
     <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
       <div className="bg-white rounded-2xl shadow-2xl max-w-md w-full overflow-hidden">
-        <div className="bg-gradient-to-r from-purple-500 to-pink-500 p-6 text-white">
+        <div className="bg-gradient-to-r from-green-400 to-purple-600 p-6 text-white">
           <h3 className="text-xl font-bold mb-1">Cost Estimate</h3>
           <p className="text-sm opacity-90">Quick reference for: <span className="font-semibold">{ingredientName}</span></p>
         </div>
@@ -22,9 +22,9 @@ const AICostEstimateModal = ({ isOpen, onClose, onAccept, ingredientName, estima
               <div className="text-xs text-gray-500 mt-1">estimated per {estimate.unit}</div>
             </div>
             
-            <div className="bg-pink-50 border-2 border-pink-200 rounded-xl p-4">
+            <div className="bg-green-50 border-2 border-green-200 rounded-xl p-4">
               <div className="text-xs text-gray-600 mb-1 font-medium">ESTIMATED PER-UNIT COST (starting point)</div>
-              <div className="text-2xl font-bold text-pink-700">
+              <div className="text-2xl font-bold text-green-600">
                 ${estimate.perUnitCost.toFixed(4)}
               </div>
               <div className="text-xs text-gray-500 mt-1">estimated per {estimate.unit}</div>
@@ -52,7 +52,7 @@ const AICostEstimateModal = ({ isOpen, onClose, onAccept, ingredientName, estima
             </button>
             <button
               onClick={onAccept}
-              className="flex-1 px-4 py-3 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-xl hover:from-purple-600 hover:to-pink-600 font-bold shadow-lg hover:shadow-xl transition-all transform hover:scale-105"
+              className="flex-1 px-4 py-3 bg-gradient-to-r from-green-400 to-purple-600 text-white rounded-xl hover:from-green-500 hover:to-purple-700 font-bold shadow-lg hover:shadow-xl transition-all transform hover:scale-105"
             >
               Use as Starting Point
             </button>

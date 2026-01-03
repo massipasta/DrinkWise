@@ -256,7 +256,7 @@ function App() {
                 <h2 className="text-2xl font-bold text-gray-900">Spirit & Mixer Templates</h2>
                 <button
                   onClick={handleNewTemplate}
-                  className="px-4 py-2 bg-gradient-to-r from-pink-500 via-purple-600 to-pink-500 text-white rounded-xl hover:from-pink-600 hover:via-purple-700 hover:to-pink-600 font-bold shadow-lg hover:shadow-xl transition-all transform hover:scale-105"
+                  className="px-4 py-2 bg-gradient-to-r from-green-400 via-purple-600 to-green-400 text-white rounded-xl hover:from-green-500 hover:via-purple-700 hover:to-green-500 font-bold shadow-lg hover:shadow-xl transition-all transform hover:scale-105"
                 >
                   + New Template
                 </button>
@@ -266,7 +266,7 @@ function App() {
                   <p className="text-gray-500 mb-4">No templates yet. Create your first template!</p>
                   <button
                     onClick={handleNewTemplate}
-                    className="px-4 py-2 bg-gradient-to-r from-pink-500 via-purple-600 to-pink-500 text-white rounded-xl hover:from-pink-600 hover:via-purple-700 hover:to-pink-600 font-bold shadow-lg hover:shadow-xl transition-all transform hover:scale-105"
+                    className="px-4 py-2 bg-gradient-to-r from-green-400 via-purple-600 to-green-400 text-white rounded-xl hover:from-green-500 hover:via-purple-700 hover:to-green-500 font-bold shadow-lg hover:shadow-xl transition-all transform hover:scale-105"
                   >
                     Create Template
                   </button>
@@ -284,7 +284,7 @@ function App() {
                       <div className="flex gap-2">
                         <button
                           onClick={() => handleEditTemplate(template)}
-                          className="px-4 py-2 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-xl hover:from-purple-600 hover:to-pink-600 font-semibold transition-all shadow-md hover:shadow-lg transform hover:scale-105 flex items-center gap-2"
+                          className="px-4 py-2 bg-gradient-to-r from-green-400 to-purple-600 text-white rounded-xl hover:from-green-500 hover:to-purple-700 font-semibold transition-all shadow-md hover:shadow-lg transform hover:scale-105 flex items-center gap-2"
                           title="Edit template"
                         >
                           <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -359,7 +359,7 @@ function App() {
         <div className="mb-8">
           <div className="flex items-center justify-between flex-wrap gap-4">
             <div>
-              <h1 className="text-4xl font-black bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent mb-1">
+              <h1 className="text-4xl font-black bg-gradient-to-r from-green-400 to-purple-600 bg-clip-text text-transparent mb-1">
                 DrinkWise
               </h1>
               <p className="text-sm text-gray-500">Smart bar costing made simple</p>
@@ -411,7 +411,7 @@ function App() {
               </button>
               <button
                 onClick={handleNewDish}
-                className="flex items-center gap-2 px-5 py-2.5 bg-gradient-to-r from-pink-500 to-purple-600 text-white rounded-lg hover:from-pink-600 hover:to-purple-700 font-semibold transition-all"
+                className="flex items-center gap-2 px-5 py-2.5 bg-gradient-to-r from-green-400 to-purple-600 text-white rounded-lg hover:from-green-500 hover:to-purple-700 font-semibold transition-all"
               >
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
@@ -467,14 +467,14 @@ function App() {
 
         {loading ? (
           <div className="text-center py-20">
-            <div className="inline-block animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600 mb-4"></div>
+            <div className="inline-block animate-spin rounded-full h-12 w-12 border-b-2 border-green-400 mb-4"></div>
             <p className="text-gray-600 text-lg">Loading cocktails...</p>
           </div>
         ) : dishes.length === 0 ? (
               <div className="text-center py-20 bg-white/80 backdrop-blur-sm rounded-2xl border-2 border-dashed border-purple-200 shadow-lg">
             <div className="max-w-md mx-auto">
-              <div className="w-20 h-20 mx-auto mb-6 bg-pink-100 rounded-full flex items-center justify-center">
-                <svg className="w-10 h-10 text-pink-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="w-20 h-20 mx-auto mb-6 bg-green-100 rounded-full flex items-center justify-center">
+                <svg className="w-10 h-10 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
                 </svg>
               </div>
@@ -482,7 +482,7 @@ function App() {
               <p className="text-gray-600 mb-8">Create your first cocktail to start calculating costs and pricing!</p>
               <button
                 onClick={handleNewDish}
-                className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-pink-500 via-purple-600 to-pink-500 text-white rounded-xl hover:from-pink-600 hover:via-purple-700 hover:to-pink-600 focus:outline-none focus:ring-2 focus:ring-pink-400 focus:ring-offset-2 shadow-lg hover:shadow-xl transition-all duration-200 font-bold transform hover:scale-105"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-green-400 via-purple-600 to-green-400 text-white rounded-xl hover:from-green-500 hover:via-purple-700 hover:to-green-500 focus:outline-none focus:ring-2 focus:ring-green-400 focus:ring-offset-2 shadow-lg hover:shadow-xl transition-all duration-200 font-bold transform hover:scale-105"
               >
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />

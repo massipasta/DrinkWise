@@ -163,7 +163,7 @@ const InvoiceUpload = ({ onClose, onSaveIngredients }) => {
   return (
     <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
       <div className="bg-white rounded-2xl shadow-2xl max-w-2xl w-full overflow-hidden">
-        <div className="bg-gradient-to-r from-purple-500 to-pink-500 p-6 text-white">
+        <div className="bg-gradient-to-r from-green-400 to-purple-600 p-6 text-white">
           <div className="flex justify-between items-center">
             <div>
               <h3 className="text-xl font-bold mb-1">Upload Invoice</h3>
@@ -268,7 +268,7 @@ const InvoiceUpload = ({ onClose, onSaveIngredients }) => {
               <button
                 onClick={handleExtract}
                 disabled={!file || extracting}
-                className="w-full sm:w-auto px-10 py-5 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-xl hover:from-purple-600 hover:to-pink-600 font-bold shadow-xl hover:shadow-2xl transition-all transform hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none flex items-center justify-center gap-3 text-lg min-w-[220px]"
+                className="w-full sm:w-auto px-10 py-5 bg-gradient-to-r from-green-400 to-purple-600 text-white rounded-xl hover:from-green-500 hover:to-purple-700 font-bold shadow-xl hover:shadow-2xl transition-all transform hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none flex items-center justify-center gap-3 text-lg min-w-[220px]"
               >
                 {extracting ? (
                   <>

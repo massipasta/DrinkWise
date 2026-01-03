@@ -20,7 +20,7 @@ export const exportDishToPDF = (dish) => {
   
   // Title
   doc.setFontSize(20)
-  doc.setTextColor(139, 92, 246) // Purple
+  doc.setTextColor(34, 197, 94) // Neon Green
   doc.text(dish.name, 20, 20)
   
   // Reset font

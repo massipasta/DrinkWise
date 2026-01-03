@@ -132,7 +132,7 @@ const TemplateForm = ({ template, onSave, onCancel, onDelete }) => {
             <div>
               <div className="bg-blue-50 border-2 border-blue-200 rounded-lg p-4 h-full flex flex-col justify-center">
                 <div className="text-xs text-gray-600 mb-1">Cost per {yieldUnit}</div>
-                <div className="text-2xl font-bold bg-gradient-to-r from-pink-600 to-purple-600 bg-clip-text text-transparent">${costPerUnit.toFixed(4)}</div>
+                <div className="text-2xl font-bold bg-gradient-to-r from-green-500 to-purple-600 bg-clip-text text-transparent">${costPerUnit.toFixed(4)}</div>
               </div>
             </div>
           </div>
@@ -179,7 +179,7 @@ const TemplateForm = ({ template, onSave, onCancel, onDelete }) => {
         )}
         <button
           type="submit"
-          className="px-6 py-3 bg-gradient-to-r from-pink-500 via-purple-600 to-pink-500 text-white rounded-xl hover:from-pink-600 hover:via-purple-700 hover:to-pink-600 focus:outline-none focus:ring-2 focus:ring-pink-400 focus:ring-offset-2 shadow-lg hover:shadow-xl transition-all duration-200 font-bold transform hover:scale-105"
+          className="px-6 py-3 bg-gradient-to-r from-green-400 via-purple-600 to-green-400 text-white rounded-xl hover:from-green-500 hover:via-purple-700 hover:to-green-500 focus:outline-none focus:ring-2 focus:ring-green-400 focus:ring-offset-2 shadow-lg hover:shadow-xl transition-all duration-200 font-bold transform hover:scale-105"
         >
           {template ? 'Update Template' : 'Create Template'}
         </button>
