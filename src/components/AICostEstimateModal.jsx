@@ -14,9 +14,11 @@ const AICostEstimateModal = ({ isOpen, onClose, onAccept, ingredientName, estima
             <div className="bg-purple-50 border-2 border-purple-200 rounded-xl p-4">
               <div className="text-xs text-gray-600 mb-1 font-medium">ESTIMATED COST RANGE (starting point)</div>
               <div className="text-2xl font-bold text-purple-700">
-                {estimate.minCost < 0.01 
-                  ? `$${estimate.minCost.toFixed(4)} - $${estimate.maxCost.toFixed(4)}`
-                  : `$${estimate.minCost.toFixed(2)} - $${estimate.maxCost.toFixed(2)}`
+                {estimate.unit === 'fl oz' || estimate.unit === 'ml'
+                  ? `$${estimate.minCost.toFixed(2)} - $${estimate.maxCost.toFixed(2)}`
+                  : estimate.minCost < 0.01 
+                    ? `$${estimate.minCost.toFixed(4)} - $${estimate.maxCost.toFixed(4)}`
+                    : `$${estimate.minCost.toFixed(2)} - $${estimate.maxCost.toFixed(2)}`
                 }
               </div>
               <div className="text-xs text-gray-500 mt-1">estimated per {estimate.unit}</div>
@@ -25,7 +27,10 @@ const AICostEstimateModal = ({ isOpen, onClose, onAccept, ingredientName, estima
             <div className="bg-green-50 border-2 border-green-200 rounded-xl p-4">
               <div className="text-xs text-gray-600 mb-1 font-medium">ESTIMATED PER-UNIT COST (starting point)</div>
               <div className="text-2xl font-bold text-green-600">
-                ${estimate.perUnitCost.toFixed(4)}
+                ${estimate.unit === 'fl oz' || estimate.unit === 'ml'
+                  ? estimate.perUnitCost.toFixed(2)
+                  : estimate.perUnitCost.toFixed(4)
+                }
               </div>
               <div className="text-xs text-gray-500 mt-1">estimated per {estimate.unit}</div>
             </div>
@@ -38,7 +43,7 @@ const AICostEstimateModal = ({ isOpen, onClose, onAccept, ingredientName, estima
               </svg>
               <div className="text-sm text-blue-800">
                 <div className="font-semibold mb-1">Use this as a starting point</div>
-                <div className="text-xs">These estimates are meant to help you get started and serve as a quick sanity check. They're based on general market trends, but your actual costs will depend on your location, supplier, and the specific quality you choose. Always verify with your suppliers before finalizing your menu prices.</div>
+                <div className="text-xs">These estimates are based on typical bar/restaurant wholesale pricing for spirits and mixers. Actual costs vary by location, supplier, brand quality, and volume discounts. Premium spirits will cost more, while well/rail brands cost less. Always verify with your suppliers before finalizing your drink prices.</div>
               </div>
             </div>
           </div>
